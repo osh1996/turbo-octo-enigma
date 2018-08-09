@@ -15,6 +15,29 @@ def defBot():
 
 	print "You have chosen: " + str(botName) + "!!!"
 
+def control(inp):
+	#sends a control signal to the specified command
+	print "*" + str(inp)
+	rep = report()
+	return rep
+
+def report():
+	retval = 0
+	#returns the report from the robot
+	return retval
+
+def query(inp):
+	#queries the specified command on the robot
+	print "?" + str(inp)
+	rep = report()
+	return rep
+
+def strtoDec(retval):
+	retval = str(retval)
+	i = int(retval, 16)
+	i = str(i)
+	return i
+
 def main():
 
 	defBot()
